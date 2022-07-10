@@ -1,5 +1,6 @@
 import React from 'react'
 import { HiArrowNarrowRight } from 'react-icons/hi'
+import { Link } from 'react-scroll';
 import TypeAnimation from 'react-type-animation';
 
 const Home = () => {
@@ -19,9 +20,11 @@ const Home = () => {
         
         <p className='max-w-[700px] py-4 text-l text-[#bdb2bd] '>I'm a final year student in Informatics Engineering transitioning into a professional software developer. Currently, I'm focusing on building web applications.</p>
         <div>
-          <button className='group text-[#f6f4f6] text-sm font-bold border-2 rounded-xl px-6 py-3 my-2 flex items-center hover:bg-[#f3973b] hover:border-[#f3973b]'>View Projects
-          <HiArrowNarrowRight className='ml-3 group-hover:rotate-90 duration-300' />
-          </button>
+          <Link to="projects" smooth={true} duration={500}>
+            <button className='group text-[#f6f4f6] text-sm font-bold border-2 rounded-xl px-6 py-3 my-2 flex items-center hover:bg-[#f3973b] hover:border-[#f3973b]'>View Projects
+              <HiArrowNarrowRight className='ml-3 group-hover:rotate-90 duration-300' />
+            </button>
+          </Link>
         </div>
       </div>
     </div>
