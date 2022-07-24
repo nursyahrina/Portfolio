@@ -3,11 +3,14 @@ import { AiFillProject } from 'react-icons/ai'
 import MovieReviews from '../assets/MovieReviewsApp.png'
 import NotesApp from '../assets/NotesApp.png'
 import BookshelfApp from '../assets/BookshelfApp.png'
+import ExerciseTracker from '../assets/ExerciseTracker.png'
 
 const projects = [ 
   [ 'Notes Application', NotesApp, 'https://inquisitive-pudding-79d9bb.netlify.app/', 'https://github.com/nursyahrina/NotesApp' ],
   [ 'Bookshelf Application', BookshelfApp, 'https://playful-seahorse-1c90fa.netlify.app/', 'https://github.com/nursyahrina/Bookshelf' ],
   [ 'MovieReviews Application', MovieReviews, 'https://gilded-maamoul-a67e9c.netlify.app/', 'https://github.com/nursyahrina/MovieReviews' ],
+  [ 'ExerciseTracker Application', ExerciseTracker, 'https://wonderful-florentine-b1bbd2.netlify.app/', 'https://github.com/nursyahrina/mern-exercise-tracker'],
+  [ 'ExerciseTracker Back-End', ExerciseTracker, '#', 'https://github.com/nursyahrina/mern-exercise-tracker-backend']
 ];
 
 const Projects = () => {
