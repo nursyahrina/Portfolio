@@ -15,22 +15,22 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div name='projects' className='projects w-full md:h-screen bg-[#342c34] text-[#e3dee3]'>
+    <div name='projects' className='projects pt-20 w-full md:h-screen bg-gradient-to-br from-amber-50 to-amber-100'>
       <div className='w-full h-full max-w-[1000px] mx-auto p-4 flex flex-col justify-center'>
         <div className='pb-8'>
-          <h3 className='text-5xl font-bold inline border-b-4 border-[#f3973b]'>
+          <h3 className='text-5xl font-bold inline border-b-8 rounded-lg pl-3 pr-1 border-amber-500 drop-shadow-xl'>
               Projects <AiFillProject className='hidden md:inline mb-6' />
           </h3>
           <p className='py-4'>My Recent Projects:</p>
         </div>
 
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
-          {projects.map(project => {
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-4'>
+          {projects.map((project, index) => {
             return (
-              <div style={{ backgroundImage: `url(${project[1]})` }}
-              className='group content-div content-item'>
+              <div key={`${index}`} style={{ backgroundImage: `url(${project[1]})` }}
+              className='group content-div content-item py-3'>
                 <div className='z-0 opacity-0 group-hover:opacity-100'>
-                  <span className='text-2xl font-semibold text-[#fffffc] tracking-wider drop-shadow-lg'>
+                  <span className='text-xl font-semibold text-[#fffffc] drop-shadow-lg'>
                     {project[0]}
                   </span>
 

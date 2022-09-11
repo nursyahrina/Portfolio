@@ -5,7 +5,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-
+// bg-[#342c34] text-[#e3dee3]
 function App() {
   return (
     <div>

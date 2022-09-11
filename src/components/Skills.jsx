@@ -38,19 +38,19 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div name='skills' className='skills w-full min-h-screen bg-[#342c34] text-[#e3dee3]'>
+    <div name='skills' className='skills pt-6 w-full min-h-screen'>
       <div className='w-full h-full max-w-[1000px] mx-auto p-4 flex flex-col justify-center'>
         <div>
-          <h3 className='text-5xl font-bold inline border-b-4 border-[#f3973b]'>
+          <h3 className='text-5xl font-bold inline border-b-8 rounded-lg pl-3 pr-1 border-amber-500 drop-shadow-xl'>
               Skills <AiFillCode className='hidden md:inline mb-6' />
           </h3>
           <p className='py-4'>The technologies I've worked with:</p>
         </div>
 
         <div className='w-full py-8 grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-5 text-center'>
-          {skills.map(skill => {
+          {skills.map((skill, index) => {
             return (
-              <div className='content-item'>
+              <div key={`${index}`} className='content-item'>
                 <img className='w-14 mx-auto' src={ skill[1] } alt="HTML Icon" />
                 <p className='my-4'>{skill[0]}</p>
               </div>
