@@ -1,16 +1,19 @@
 import React from 'react'
 import { AiFillProject } from 'react-icons/ai'
 import MovieReviews from '../assets/MovieReviewsApp.png'
+import AnyDiscuss from '../assets/AnyDiscuss.png'
 import NotesApp from '../assets/NotesApp.png'
 import BookshelfApp from '../assets/BookshelfApp.png'
+import SISFO from '../assets/SISFO.png'
 import ExerciseTracker from '../assets/ExerciseTracker.png'
 
-const projects = [ 
+const projects = [
+  [ 'Forum Application', AnyDiscuss, 'https://scintillating-douhua-8d5ab9.netlify.app/', 'https://github.com/nursyahrina/AnyDiscuss' ],
   [ 'Notes Application', NotesApp, 'https://inquisitive-pudding-79d9bb.netlify.app/', 'https://github.com/nursyahrina/NotesApp' ],
   [ 'Bookshelf Application', BookshelfApp, 'https://playful-seahorse-1c90fa.netlify.app/', 'https://github.com/nursyahrina/Bookshelf' ],
   [ 'MovieReviews Application', MovieReviews, 'https://gilded-maamoul-a67e9c.netlify.app/', 'https://github.com/nursyahrina/MovieReviews' ],
+  [ 'Academic Information System', SISFO, '#', 'https://github.com/nursyahrina/SISFO_CI'],
   [ 'ExerciseTracker Application', ExerciseTracker, 'https://wonderful-florentine-b1bbd2.netlify.app/', 'https://github.com/nursyahrina/mern-exercise-tracker'],
-  [ 'ExerciseTracker Back-End', ExerciseTracker, '#', 'https://github.com/nursyahrina/mern-exercise-tracker-backend']
 ];
 
 const Projects = () => {
@@ -35,9 +38,9 @@ const Projects = () => {
                   </span>
 
                   <div className='pt-9 text-center'>
-                    <a href={project[2]}>
+                    {(project[2] !== '#') && <a href={project[2]}>
                       <button className='rounded-lg px-4 py-3 m-2 bg-[#fffffc] text-gray-700 font-semibold text-lg hover:-translate-y-1 duration-100 hover:drop-shadow-lg'>Demo</button>
-                    </a>
+                    </a>}
                     <a href={project[3]}>
                       <button className='rounded-lg px-4 py-3 m-2 bg-[#fffffc] text-gray-700 font-semibold text-lg hover:-translate-y-1 duration-100 hover:drop-shadow-lg'>Code</button>
                     </a>
