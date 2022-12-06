@@ -20,7 +20,7 @@ const Home = () => {
           <h1 className='text-5xl sm:text-7xl text-amber-600 mb-4'>Nursyahrina</h1>
           <h2 className='text-3xl sm:text-5xl text-amber-500'>I'm a Web Developer.</h2>
           
-          <p className='max-w-[700px] py-5 text-l'>I'm a final year student in Informatics Engineering transitioning into a professional software developer. Currently, I'm focusing on building web applications.</p>
+          <p className='max-w-[700px] py-5 text-l'>I'm a fresh graduate with Bachelor degree in Informatics Engineering, transitioning into a professional developer. Currently, I'm focusing on building web applications.</p>
           <div>
             <Link to="projects" smooth={true} duration={500}>
               <button className='group text-sm font-bold rounded-xl px-6 py-3 my-2 flex items-center border-2 border-amber-500 hover:bg-gradient-to-r from-amber-500 to-amber-400 hover:text-amber-50 hover:translate-x-2 animate-scale'>View Projects

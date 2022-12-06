@@ -18,7 +18,7 @@ const About = () => {
             <h2>Hi! I'm Nursyahrina,<br />nice to meet you.</h2>
           </div>
           <div>
-            <p>I'm currently a final year student at Institut Teknologi Padang, majoring in Informatics Engineering. I'm passionate about data and programming; having intermediate experiences in web-based application development, with focus either on front-end or back-end development; and interested in topics of data science. I'm certified student at Dicoding Academy in Front-End and Back-End Web Developer learning path, also in Machine Learning Developer learning path.</p>
+            <p>I'm a fresh graduate with Bachelor degree in Informatics Engineering. I'm passionate about data and programming; having intermediate skills in web-based application development, front-end and back-end development; and highly interested in topics of data science. I'm certified student at Dicoding Academy in Front-End (React) and Back-End Web Developer learning path, also in Machine Learning Developer learning path.</p>
           </div>
         </div>
       </div>
